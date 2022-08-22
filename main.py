@@ -7,7 +7,6 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     data = json.dumps(obj, ensure_ascii=False)
-    print(type(obj))
     return data
 
 if __name__ == "__main__":
