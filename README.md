@@ -19,6 +19,12 @@ sudo firewall-cmd --reload
 pip3 install -r requirements.txt
 ```
 
+### 不要背景執行
+```
+python3 -m gunicorn --bind 0.0.0.0:5000 main:app
+```
+
+### 背景執行
 ```
 python3 -m gunicorn --bind 0.0.0.0:5000 main:app --daemon
 ```
